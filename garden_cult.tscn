@@ -1,0 +1,118 @@
+[gd_scene load_steps=16 format=3 uid="uid://ftmmbi73nagr"]
+
+[ext_resource type="Texture2D" uid="uid://btn8ekfsy2owa" path="res://Green_grass_bird's_eye_view_texture.jpg" id="1_nlaph"]
+[ext_resource type="Texture2D" uid="uid://2vogsqnumx7f" path="res://1sun.png" id="2_0ts82"]
+[ext_resource type="Texture2D" uid="uid://bq5qwitlpslla" path="res://1fig.png" id="3_2fqpd"]
+[ext_resource type="Script" path="res://Rotate.gd" id="3_fc70p"]
+[ext_resource type="Texture2D" uid="uid://b3xej254udsts" path="res://3fig.png" id="4_ugutc"]
+[ext_resource type="Texture2D" uid="uid://ctmd8h6je6tgu" path="res://4fig.png" id="5_syycn"]
+[ext_resource type="Texture2D" uid="uid://bns0p2y1pfpws" path="res://10bug.png" id="6_100e6"]
+[ext_resource type="Texture2D" uid="uid://vymfu63l08ix" path="res://2fig.png" id="6_mtwpf"]
+[ext_resource type="Texture2D" uid="uid://dbdwxmygew25x" path="res://5fig.png" id="7_lu8f1"]
+[ext_resource type="Texture2D" uid="uid://btko7ab5hgiai" path="res://8bug.png" id="7_qyecf"]
+[ext_resource type="Texture2D" uid="uid://dtxqt01dqlewn" path="res://7fig.png" id="9_g0mhk"]
+[ext_resource type="Texture2D" uid="uid://cutuxg6smam77" path="res://8fig.png" id="10_7o447"]
+[ext_resource type="Texture2D" uid="uid://7kofxb22qlwn" path="res://9fig.png" id="11_hcxl8"]
+[ext_resource type="Texture2D" uid="uid://bpcjkt4nonduf" path="res://2bug.png" id="11_uolki"]
+[ext_resource type="Texture2D" uid="uid://b6mrlfat4p2t2" path="res://6bug.png" id="12_r4onb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="GreenGrassBird\'sEyeViewTexture" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1104.87, 623.062)
+scale = Vector2(0.559979, 0.425383)
+texture = ExtResource("1_nlaph")
+script = ExtResource("3_fc70p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(600, 300)
+scale = Vector2(0.0782022, 0.0761678)
+texture = ExtResource("2_0ts82")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.01
+
+[node name="3Fig" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(2787.65, 2743.94)
+scale = Vector2(0.446665, 0.41032)
+texture = ExtResource("4_ugutc")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.04
+
+[node name="5Fig" type="Sprite2D" parent="Sprite2D/3Fig"]
+position = Vector2(2180.09, 44.6895)
+scale = Vector2(1.94235, 2.03983)
+texture = ExtResource("7_lu8f1")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.001
+
+[node name="10Bug" type="Sprite2D" parent="Sprite2D/3Fig/5Fig"]
+position = Vector2(86.2103, -7535.5)
+scale = Vector2(1.1591, 1.42283)
+texture = ExtResource("6_100e6")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.1
+
+[node name="8Bug" type="Sprite2D" parent="Sprite2D/3Fig/5Fig/10Bug"]
+position = Vector2(-158.154, 963.956)
+scale = Vector2(2.87047, 2.32603)
+texture = ExtResource("7_qyecf")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.35
+
+[node name="1Fig" type="Sprite2D" parent="Sprite2D/3Fig"]
+position = Vector2(-2299.01, 2726.05)
+scale = Vector2(1.14897, 1.29177)
+texture = ExtResource("3_2fqpd")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.03
+
+[node name="4Fig" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-4066.38, -4568.86)
+scale = Vector2(1.29034, 1.16729)
+texture = ExtResource("5_syycn")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.005
+
+[node name="2Fig" type="Sprite2D" parent="Sprite2D/4Fig"]
+position = Vector2(-1519.66, 1428.1)
+scale = Vector2(0.275424, 0.279982)
+texture = ExtResource("6_mtwpf")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.075
+
+[node name="2Bug" type="Sprite2D" parent="Sprite2D/4Fig/2Fig"]
+position = Vector2(-2002.53, -79.2207)
+scale = Vector2(3.32826, 4.51933)
+texture = ExtResource("11_uolki")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.33
+
+[node name="6Bug" type="Sprite2D" parent="Sprite2D/4Fig/2Fig"]
+position = Vector2(3142.78, 2290.91)
+scale = Vector2(3.88597, 4.6922)
+texture = ExtResource("12_r4onb")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.25
+
+[node name="7Fig" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-3094.54, 1627.98)
+scale = Vector2(0.372628, 0.3713)
+texture = ExtResource("9_g0mhk")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.02
+
+[node name="8Fig" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(831.179, -3216.58)
+scale = Vector2(0.544756, 0.427791)
+texture = ExtResource("10_7o447")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.05
+
+[node name="9Fig" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(3235.2, -1260.38)
+scale = Vector2(0.319215, 0.321401)
+texture = ExtResource("11_hcxl8")
+script = ExtResource("3_fc70p")
+rotation_speed = 0.003
