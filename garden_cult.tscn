@@ -69,7 +69,7 @@ script = ExtResource("3_fc70p")
 rotation_speed = 0.03
 
 [node name="4Fig" type="Sprite2D" parent="Sprite2D"]
-position = Vector2(-4066.38, -4568.86)
+position = Vector2(-3554.89, -3216.58)
 scale = Vector2(1.29034, 1.16729)
 texture = ExtResource("5_syycn")
 script = ExtResource("3_fc70p")
